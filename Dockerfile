@@ -23,7 +23,7 @@ RUN echo $TEST
 
 # MUST RUN THIS TWO LINE 
 # set timezone according to your region
-ENV TZ=Europe/Kiev
+ENV TZ=Asia/Kolkata
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 
 # Run instruction runs a command

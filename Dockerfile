@@ -34,8 +34,8 @@ RUN apt install python3 python3-pip build-essential cmake make -y
 
 # Install flask package
 
-RUN pip3 install dlib flask
-
+# RUN pip3 install dlib flask
+RUN pip3 install  flask
 # Lets copy contents of current folder to /docker-app folder in image
 
 ADD ./ /docker-app

@@ -9,8 +9,8 @@
 #   cuda version is 11.2
 
 
-#FROM nvidia/cuda:11.2.2-cudnn8-devel-ubuntu20.04
-FROM ubuntu
+FROM nvidia/cuda:11.2.2-cudnn8-devel-ubuntu20.04
+#FROM ubuntu
 # Add labels to docker such as maintainer, version etc.
 LABEL maintainer="vk001716@gmail.com"
 LABEL version="0.1"
@@ -36,6 +36,7 @@ RUN apt install python3 python3-pip build-essential cmake make -y
 
 # RUN pip3 install dlib flask
 RUN pip3 install  flask
+RUN pip3 install torch==1.8.2+cu111 torchvision==0.9.2+cu111 torchaudio==0.8.2 -f https://download.pytorch.org/whl/lts/1.8/torch_lts.html
 # Lets copy contents of current folder to /docker-app folder in image
 
 ADD ./ /docker-app

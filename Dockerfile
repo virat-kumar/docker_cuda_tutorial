@@ -12,14 +12,14 @@
 FROM nvidia/cuda:11.2.2-cudnn8-devel-ubuntu20.04
 #FROM ubuntu
 # Add labels to docker such as maintainer, version etc.
-LABEL maintainer="vk001716@gmail.com"
-LABEL version="0.1"
+# LABEL maintainer="vk001716@gmail.com"
+# LABEL version="0.1"
 
 
 # ENV instruction adds env variable
-ENV TEST="hello"
+# ENV TEST="hello"
 
-RUN echo $TEST
+# RUN echo $TEST
 
 # MUST RUN THIS TWO LINE 
 # set timezone according to your region
